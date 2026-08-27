@@ -1,6 +1,6 @@
 <?php
-// Таблица маршрутов: URL => [Контроллер, метод].
 
 return array(
+    '/' => array('HomeController', 'index'),
     '/contact' => array('ContactController', 'send'),
 );
