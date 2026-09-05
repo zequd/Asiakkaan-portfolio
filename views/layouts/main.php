@@ -17,18 +17,22 @@
 
 <link rel="stylesheet" href="/assets/css/style.css">
 <link rel="stylesheet" href="/assets/css/hero.css">
+<link rel="stylesheet" href="/assets/css/experience.css">
 
 <script>
 (function () {
     try {
         var param = new URLSearchParams(location.search).get('motion');
         var saved = localStorage.getItem('motion-preference');
+        var local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
         var on;
 
         if (param === 'on' || param === 'off') {
             on = param === 'on';
         } else if (saved === 'on' || saved === 'off') {
             on = saved === 'on';
+        } else if (local) {
+            on = true;
         } else {
             on = !matchMedia('(prefers-reduced-motion: reduce)').matches;
         }
@@ -43,6 +47,8 @@
 <body>
 
 <?= $content ?>
+
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>
