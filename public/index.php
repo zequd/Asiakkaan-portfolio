@@ -8,7 +8,6 @@ if (php_sapi_name() === 'cli-server') {
     }
 }
 
-require_once __DIR__ . '/../config/config.php';
 require_once __DIR__ . '/../src/Core/Router.php';
 require_once __DIR__ . '/../src/Core/View.php';
 require_once __DIR__ . '/../views/helpers.php';
