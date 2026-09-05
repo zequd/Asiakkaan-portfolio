@@ -5,6 +5,22 @@ function e($text)
     return htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
 }
 
+function words($text)
+{
+    $out = '';
+    $parts = explode(' ', $text);
+
+    foreach ($parts as $i => $word) {
+        $out .= '<span class="reveal__word" style="--i: ' . $i . '">' . e($word) . '</span>';
+
+        if ($i < count($parts) - 1) {
+            $out .= ' ';
+        }
+    }
+
+    return $out;
+}
+
 function chars($text)
 {
     $out = '';
