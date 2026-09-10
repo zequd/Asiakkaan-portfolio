@@ -16,8 +16,13 @@
 <link rel="preload" href="/assets/fonts/Satoshi-Variable.woff2" as="font" type="font/woff2" crossorigin>
 
 <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/rail.css">
 <link rel="stylesheet" href="/assets/css/hero.css">
 <link rel="stylesheet" href="/assets/css/experience.css">
+<link rel="stylesheet" href="/assets/css/skills.css">
+<link rel="stylesheet" href="/assets/css/credentials.css">
+<link rel="stylesheet" href="/assets/css/contact.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
 
 <script>
 (function () {
@@ -48,7 +53,10 @@
 
 <?= $content ?>
 
+<script src="/assets/lib/lenis.min.js"></script>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/background.js"></script>
+<script src="/assets/js/rail.js"></script>
 
 </body>
 </html>
