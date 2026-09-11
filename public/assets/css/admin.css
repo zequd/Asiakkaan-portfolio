@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/assets/fonts/Satoshi-Variable.woff2') format('woff2');
+    font-weight: 300 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --bg: #111318;
+    --line: rgb(255 255 255 / 0.1);
+    --input: rgb(255 255 255 / 0.04);
+    --text: #ffffff;
+    --muted: #94a3b8;
+    --primary: #2563eb;
+    --danger: #f43f5e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.6 'Satoshi', 'Segoe UI', system-ui, sans-serif;
+}
+
+.wrap {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top {
+    border-bottom: 1px solid var(--line);
+}
+
+.top .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+}
+
+.top a {
+    color: var(--muted);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.top a:hover,
+.top a.on {
+    color: var(--text);
+}
+
+.brand {
+    margin-right: 6px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.spacer {
+    margin-left: auto;
+}
+
+h1 {
+    margin: 24px 0 16px;
+    font-size: 20px;
+}
+
+.item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.item:first-child {
+    padding-top: 0;
+}
+
+.item__title {
+    margin: 0 0 12px;
+    font-weight: 700;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+input[type=text],
+input[type=password],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--input);
+    color: var(--text);
+    font: inherit;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary);
+    outline: none;
+}
+
+input[type=file] {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+option {
+    background: var(--bg);
+}
+
+.btn {
+    padding: 8px 14px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: none;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+}
+
+.btn--main {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+.link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--muted);
+    font: inherit;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--text);
+}
+
+.link--danger {
+    color: var(--danger);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.list a {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--text);
+    text-decoration: none;
+}
+
+.list a span {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.list a:first-child {
+    padding-top: 0;
+}
