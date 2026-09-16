@@ -429,8 +429,3 @@ class AdminController
     public function sections() { $this->index(); }
     public function contact() { $this->index(); }
 }
-
-
-        return false;
-    }
-}
