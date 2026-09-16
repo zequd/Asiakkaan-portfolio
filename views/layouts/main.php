@@ -57,6 +57,7 @@
 <script src="/assets/js/main.js"></script>
 <script src="/assets/js/background.js"></script>
 <script src="/assets/js/rail.js"></script>
+<script src="/assets/js/developer-panel.js"></script>
 
 </body>
 </html>
