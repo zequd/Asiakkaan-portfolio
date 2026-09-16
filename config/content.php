@@ -3,6 +3,7 @@
 return array(
 
     'site' => array(
+        'avatar' => '/assets/img/avatar.webp',
         'name' => 'Mikhail Ignatev',
         'role' => 'Business Development Manager',
         'company' => 'Kadam',
